@@ -1,13 +1,37 @@
 import './App.css';
+import React, { useEffect, useState } from 'react';
 import '@fortawesome/fontawesome-free/css/all.css';
 
 function App() {
+    const [visible, setVisible] = useState(false);
+    useEffect(()=>{
+        const handleScroll = () => {
+            if(window.scrollY > 60){
+                setVisible(true);
+            } else {
+                setVisible(false);
+            };
+        };
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        }
+    }, []);
+
+    const handleScrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+            
+        })
+    }
     return (<>
         <header>
             <h1>Portfolio</h1>
             <nav>
                 <a href={"#hero"}>Hero</a>
                 <a href={"#project"}>Projects</a>
+                <a href={"#contact"}>Contact</a>
             </nav>
         </header>
         <main>
@@ -15,28 +39,31 @@ function App() {
                 <h1>Welcome to my Portfolio!I am PhyoThiha a front-end Webdeveloper.</h1>
                 <div className={'content'}>
                     <div className={'content-container'}>
-                    <h1 className={'skill-heading'}>Skills</h1>
+                        <div className={'content-heading-container'}>
+                        <h1 className={'skill-heading'}>Skills</h1>
+                        <div className={"line"}></div>
+                        </div>
                     <div className={'skill-wrapper'}>
                     <div className={'skill-container'}>
-                    <i class="fa-brands fa-html5 fa-5x"></i>
+                    <i className="fa-brands fa-html5 fa-5x"></i>
                         <h1 className={'skill-title'}>HTML</h1>
                     </div>
                     <div className={'skill-container'}>
-                    <i class="fa-brands fa-css3-alt fa-5x"></i>
+                    <i className="fa-brands fa-css3-alt fa-5x"></i>
                         <h1 className={'skill-title'}>CSS</h1>
                     </div>
                     <div className={'skill-container'}>
-                    <i class="fa-brands fa-js fa-5x"></i>
+                    <i className="fa-brands fa-js fa-5x"></i>
                         <h1 className={'skill-title'}>JavaScript</h1>
                     </div>
                     <div className={'skill-container'}>
-                    <i class="fa-brands fa-react fa-5x"></i>
+                    <i className="fa-brands fa-react fa-5x"></i>
                         <h1 className={'skill-title'}>ReactJs</h1>
                     </div>
                     </div>
                     </div>
                     <div className={'content-container'}>
-                    <h1 className={'exp-heading'}>Level: 5months Exp</h1>
+                    <h1 className={'exp-heading'}>Level: 5months Exp🏅🏅🏅🏅🏅</h1>
                     <div className={'exp-content'}>
                         <img className={'exp-img'} src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDCzA-fq6o_OlsV6jvzVLU0qYLCU8uGoscJatjLn-_8nJ1u95T7ga2HjxLEpKqEAg_ogA&usqp=CAU"} alt={'mml'} />
                         <h1 className={'exp-text'}>Myanmar Media LinkAge</h1>
@@ -68,7 +95,14 @@ function App() {
                     </div>
                 </div>
             </section>
+            <section id={"contact"} className={"contact"}>
+                <h1>Contact</h1>
+                <h1>Address: Yangon, Thaketa, HtuParYone front 5th street, No.1268.</h1>
+                <h1>Tel: 09758454815</h1>
+                <h1>Email: phyothiha97531@gmail.com</h1>
+            </section>
         </main>
+        {visible ? <button onClick={handleScrollToTop} className={"scroll-to-top-button"}>🢁</button> : ''}
     </>);
 }
 
