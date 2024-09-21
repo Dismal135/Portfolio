@@ -26,6 +26,7 @@ function App() {
         })
     }
     return (<>
+    {visible ? <button onClick={handleScrollToTop} className={"scroll-to-top-button"}>🢁</button> : ''}
         <header>
             <h1>Portfolio</h1>
             <nav>
@@ -102,7 +103,6 @@ function App() {
                 <h1>Email: phyothiha97531@gmail.com</h1>
             </section>
         </main>
-        {visible ? <button onClick={handleScrollToTop} className={"scroll-to-top-button"}>🢁</button> : ''}
     </>);
 }
 
