@@ -30,7 +30,6 @@ function App() {
         <header>
             <h1>Portfolio</h1>
             <nav>
-                <a href={"#hero"}>Hero</a>
                 <a href={"#project"}>Projects</a>
                 <a href={"#contact"}>Contact</a>
             </nav>
