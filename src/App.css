@@ -93,10 +93,6 @@ nav a {
     padding: 0 1rem;
 }
 
-body {
-    font-family: sans-serif;
-}
-
 .scroll-to-top-button {
     position: fixed;
     bottom: 16px;
