@@ -10,7 +10,7 @@ function App() {
                 setVisible(true);
             } else {
                 setVisible(false);
-            };
+            }
         };
         window.addEventListener("scroll", handleScroll);
         return () => {
@@ -30,8 +30,8 @@ function App() {
         <header>
             <h1>Portfolio</h1>
             <nav>
-                <a href={"#project"}>Projects</a>
-                <a href={"#contact"}>Contact</a>
+                <a className={"nav-link"} href={"#project"}>Projects</a>
+                <a className={"nav-link"} href={"#contact"}>Contact</a>
             </nav>
         </header>
         <main>
@@ -76,19 +76,19 @@ function App() {
                 <h1>My Projects</h1>
                 <div className={'project-container'}>
                     <div className={'project-wrapper'}>
-                        <a className={'project-link'} href={'https://randomquotemachinephyothiha.netlify.app'}>
+                        <a target={"_blank"} rel={"noreferrer"} className={'project-link'} href={'https://randomquotemachinephyothiha.netlify.app'}>
                         <img className={"project-img"} src={'./images/quotemachine.png'} alt={'quotemachine'} />
                         <h1 className={"project-name"}>Random Quote Machine</h1>
                         </a>
                     </div>
                     <div className={'project-wrapper'}>
-                        <a className={'project-link'} href={'https://reacttechnicaldocumentation.netlify.app'}>
+                        <a target={"_blank"} rel={"noreferrer"} className={'project-link'} href={'https://reacttechnicaldocumentation.netlify.app'}>
                         <img className={"project-img"} src={'./images/technicaldoc.png'} alt={'reactdoc'} />
                         <h1 className={"project-name"}>React Documentation</h1>
                         </a>
                     </div>
                     <div className={'project-wrapper'}>
-                        <a className={'project-link'} href={'https://productlandingpagephyothiha.netlify.app'}>
+                        <a target={"_blank"} rel={"noreferrer"} className={'project-link'} href={'https://productlandingpagephyothiha.netlify.app'}>
                         <img className={"project-img"} src={'./images/productlandingpage.png'} alt={'productlandingpage'} />
                         <h1 className={"project-name"}>Product Landing Page</h1>
                         </a>
@@ -96,10 +96,10 @@ function App() {
                 </div>
             </section>
             <section id={"contact"} className={"contact"}>
-                <h1>Contact</h1>
-                <h1>Address: Yangon, Thaketa, HtuParYone front 5th street, No.1268.</h1>
-                <h1>Tel: 09758454815</h1>
-                <h1>Email: phyothiha97531@gmail.com</h1>
+                <h1>Contact📜📜📜</h1>
+                <h1>Address: 🏠Yangon, Thaketa, HtuParYone front 5th street, No.1268.</h1>
+                <h1>Tel: 📞09758454815</h1>
+                <h1>Email: 📧phyothiha97531@gmail.com</h1>
             </section>
         </main>
     </>);
