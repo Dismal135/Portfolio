@@ -1,6 +1,7 @@
 import './App.css';
 import React, { useEffect, useState } from 'react';
 import '@fortawesome/fontawesome-free/css/all.css';
+import Penguin from "./Components/penguin/penguin";
 
 function App() {
     const [visible, setVisible] = useState(false);
@@ -37,6 +38,7 @@ function App() {
         <main>
             <section id={'hero'} className="hero">
                 <h1>Welcome to my Portfolio!I am PhyoThiha a front-end Webdeveloper.</h1>
+                <Penguin />
                 <div className={'content'}>
                     <div className={'content-container'}>
                         <div className={'content-heading-container'}>
