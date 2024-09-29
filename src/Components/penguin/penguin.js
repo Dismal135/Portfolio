@@ -20,8 +20,7 @@ const Penguin = () => {
                     <div className="beak bottom"></div>
                 </div>
                 <div className="shirt">
-                    <div>💜</div>
-                    <p>I CSS</p>
+                    <p>Hire me!</p>
                 </div>
                 <div className="penguin-body">
                     <div className="arm left"></div>

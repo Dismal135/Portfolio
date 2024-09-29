@@ -5,6 +5,7 @@ import Penguin from "./Components/penguin/penguin";
 
 function App() {
     const [visible, setVisible] = useState(false);
+    const [read, setRead] = useState(false);
     useEffect(()=>{
         const handleScroll = () => {
             if(window.scrollY > 60){
@@ -27,7 +28,7 @@ function App() {
         })
     }
     return (<>
-    {visible ? <button onClick={handleScrollToTop} className={"scroll-to-top-button"}>🢁</button> : ''}
+    {visible ? <button onClick={handleScrollToTop} className={"scroll-to-top-button"}>^</button> : ''}
         <header>
             <h1>Portfolio</h1>
             <nav>
@@ -38,7 +39,12 @@ function App() {
         <main>
             <section id={'hero'} className="hero">
                 <h1>Welcome to my Portfolio!I am PhyoThiha a front-end Webdeveloper.</h1>
+                <div className='about-hero'>
                 <Penguin />
+                <h1 className='introduction'>Hello! My name is PHYO THI HA. I was born on {read ? (<>November 24th 1996 in Myanmar Yangon by my father U MIN LWIN and my mother DAW YIN YIN Hla. I have one brother who is 6 years younger than me. I graduated from No.5 Education High School Botahtaung. My current education status is Dagon University English Major and learning programming at <a href='https://www.freecodecamp.org/'>FreeCodeCamp</a>. I like fantasy and mysteries although they are not real 😅. Above all I like to become a developer because I like to learn something incredible every seconds.</>) : ""}
+                    <div onClick={()=>setRead(!read)} className='read-button'>{read ? 'read less...' : 'read more...'}</div>
+                </h1>
+                </div>
                 <div className={'content'}>
                     <div className={'content-container'}>
                         <div className={'content-heading-container'}>
