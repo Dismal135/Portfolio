@@ -218,11 +218,3 @@
     right: 25%;
     transform: rotate(-80deg);
 }
-
-@media screen and (min-width: 1440px) {
-    .penguin {
-        position: fixed;
-        left: 5%;
-        top: 5%;
-    }
-}
