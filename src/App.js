@@ -83,7 +83,7 @@ function App() {
                         <div className={"line"}></div>
                         </div>
                         <div className={'certificate-content'}>
-                            <a target='_blank' href='https://www.freecodecamp.org/certification/PHYOTHIHA1056/responsive-web-design' className='certificate-link'>
+                            <a rel='noreferrer' target='_blank' href='https://www.freecodecamp.org/certification/PHYOTHIHA1056/responsive-web-design' className='certificate-link'>
                         <img className={'certificate-img'} src={"./images/responsive web design.png"} alt={'mml'} />
                         <h1 className={'certificate-text'}>Responsive Web Design</h1>
                         </a>
