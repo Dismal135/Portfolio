@@ -15,9 +15,11 @@ header {
 .introduction {
     width: 100%;
     max-width: 400px;
-    font-size: large;
+    color: rgb(95, 94, 94);
+    font-size: medium;
     font-weight: 100;
     text-align: justify;
+    font-family: Lora;
 }
 
 nav {
@@ -40,7 +42,7 @@ nav a {
 }
 
 .content-container {
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     padding: 1px 1rem 1rem 1rem;
 }
 
@@ -92,6 +94,29 @@ nav a {
     gap: 1rem;
 }
 
+.certificate-img {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.certificate-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.certificate-link {
+    text-decoration: none;
+    color: black;
+}
+
+.certificate-link:hover {
+    text-decoration: underline;
+}
+
 .project {
     padding: 0 1rem;
 }
@@ -109,7 +134,7 @@ nav a {
     height: 146px;
     max-width: 250px;
     border-radius: 10px;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 .project-img:hover {

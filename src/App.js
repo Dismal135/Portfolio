@@ -77,6 +77,18 @@ function App() {
                         <h1 className={'exp-text'}>Myanmar Media LinkAge</h1>
                     </div>
                     </div>
+                    <div className={'content-container'}>
+                        <div className={'content-heading-container'}>
+                        <h1 className={'skill-heading'}>Certificates</h1>
+                        <div className={"line"}></div>
+                        </div>
+                        <div className={'certificate-content'}>
+                            <a target='_blank' href='https://www.freecodecamp.org/certification/PHYOTHIHA1056/responsive-web-design' className='certificate-link'>
+                        <img className={'certificate-img'} src={"./images/responsive web design.png"} alt={'mml'} />
+                        <h1 className={'certificate-text'}>Responsive Web Design</h1>
+                        </a>
+                    </div>
+                    </div>
                 </div>
             </section>
 
