@@ -3,6 +3,10 @@ body {
   padding: 0;
   font-family: sans-serif;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 html {
@@ -13,14 +17,7 @@ html {
   box-sizing: border-box;
 }
 
-@media screen and (min-width: 1200px) {
-  body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
+@media screen and (min-width: 720px) {
   .nav-link {
     display: none;
   }
@@ -28,5 +25,4 @@ html {
   .scroll-to-top-button {
     display: none;
   }
-
 }
