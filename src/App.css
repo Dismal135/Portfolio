@@ -179,3 +179,9 @@ nav a {
         justify-content: center;
     }
 }
+
+@media screen and (max-width: 720px) {
+    .certificate-img {
+        width: 300px;
+    }
+}
