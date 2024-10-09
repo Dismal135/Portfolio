@@ -83,7 +83,7 @@ function App() {
                         <div className={"line"}></div>
                         </div>
                         <div className={'certificate-content'}>
-                            <a target='_blank' href='https://www.freecodecamp.org/certification/PHYOTHIHA1056/responsive-web-design' className='certificate-link'>
+                            <a rel='noreferrer' target='_blank' href='https://www.freecodecamp.org/certification/PHYOTHIHA1056/responsive-web-design' className='certificate-link'>
                         <img className={'certificate-img'} src={"./images/responsive web design.png"} alt={'mml'} />
                         <h1 className={'certificate-text'}>Responsive Web Design</h1>
                         </a>
@@ -111,6 +111,12 @@ function App() {
                         <a target={"_blank"} rel={"noreferrer"} className={'project-link'} href={'https://productlandingpagephyothiha.netlify.app'}>
                         <img className={"project-img"} src={'./images/productlandingpage.png'} alt={'productlandingpage'} />
                         <h1 className={"project-name"}>Product Landing Page</h1>
+                        </a>
+                    </div>
+                    <div className={'project-wrapper'}>
+                        <a target={"_blank"} rel={"noreferrer"} className={'project-link'} href={'https://reacttictactoepth.netlify.app/'}>
+                        <img className={"project-img"} src={'./images/reacttictactoe.png'} alt={'reacttictactoe'} />
+                        <h1 className={"project-name"}>React TicTacToe</h1>
                         </a>
                     </div>
                 </div>
